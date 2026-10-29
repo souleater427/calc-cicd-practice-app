@@ -21,5 +21,12 @@ function divide(a, b) {
 function power(base, exponent) {
   return base ** exponent;
 }
-module.exports = { add, subtract, multiply, divide };
-module.exports = { add, subtract, multiply, divide, power };
+function remainder(a, b) {
+  if (b === 0) {
+    throw new Error('0で割ることはできません');
+  }
+  return a % b;
+}
+
+module.exports = { add, subtract, multiply, divide, power, remainder };
+
