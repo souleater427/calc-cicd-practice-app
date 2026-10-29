@@ -18,4 +18,8 @@ function divide(a, b) {
   return a / b;
 }
 
+function power(base, exponent) {
+  return base ** exponent;
+}
 module.exports = { add, subtract, multiply, divide };
+module.exports = { add, subtract, multiply, divide, power };
